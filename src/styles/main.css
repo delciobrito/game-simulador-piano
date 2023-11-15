@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e3f2fd;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 35px 40px;
+    width: 780px;
+}
+
+h2 {
+    font-size: 1.6rem
+}
+
+header .column {
+    display: flex;
+    align-items: center;
+}
+
+header .column span {
+    font-size: 1.19rem;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.volume-slider {
+    accent-color: #fff;
+}
+
+.keys-check input{
+    position: relative;
+
+    appearance: none;
+    background-color: #4b4b4b;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+}
+
+/* Estilizando a caixa de checked */
+.keys-check input::before {
+    content: "";
+    position: absolute;
+
+    background-color: #8c8c8c;
+    border-radius: inherit; 
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 0.3rem;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keys-check input:checked::before {
+    background-color: #8c8c8c;
+    left: 2.1rem;
+}
